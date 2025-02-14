@@ -1,0 +1,57 @@
+nav {
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background 0.3s ease;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  color: #fff;
+  background: #ff6600;
+}
+
+nav button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+nav button:active {
+  transform: scale(0.95);
+}
+
+nav > * {
+  margin-right: 15px;
+}
+
+nav a:last-child,
+nav button:last-child {
+  margin-right: 0;
+}
